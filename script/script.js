@@ -8,3 +8,13 @@ document.getElementById('ShopEase-btn').addEventListener('click',function(e){
     setInnerTextByIDandValue('task-id',sub);
     setInnerTextByIDandValue('board-id',sum);
 });
+
+// random color
+
+function genColorFn() {
+    return '#' + Math.floor(Math.random()*16777215).toString(16);
+}
+
+document.getElementById('random-color').addEventListener('click',function(){
+    document.body.style.backgroundColor = genColorFn();
+});
