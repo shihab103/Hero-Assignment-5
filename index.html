@@ -4,8 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- link daisy UI and tailwind -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
+    <!-- navigation section -->
+    <section class="px-20">
+        <div class="navbar bg-base-100 shadow-sm">
+            <div class="flex-1 flex items-center">
+              <img src="assets/logo.png" alt="">
+              <a class="btn btn-ghost text-xl">Dev<span class="font-bold">Board</span></a>
+            </div>
+
+            <div class="flex-none">
+              <img src="assets/theme-btn.png" alt="">
+            </div>
+          </div>
+    </section>
+
+    <!-- body section -->
     
+    <section class="px-20 mt-5">
+      <!-- left div -->
+      <div>
+        <!-- top div -->
+         <div class="grid grid-cols-3 gap-4">
+          <!-- first div -->
+          <div class="bg-[#f4f7ff] flex items-center justify-center rounded-lg">
+            <div class="bg-white rounded-full p-3">
+              <img src="assets/checkbox.png" alt="">
+            </div>
+              <div class="pl-3">
+                <h2 class="text-gray-600 font-medium">Task Assigned</h2>
+                <h1 class="font-bold text-2xl">05</h1>
+              </div>
+          </div>
+          <!-- second -->
+          <div class="bg-pink-400 flex items-center justify-center rounded-lg">
+            <div>
+              <img src="assets/board.png" alt="">
+            </div>
+            <div>
+              <h1 class="text-white">Discover Something <br> New Today!</h1>
+            </div>
+          </div>
+          <!-- third -->
+           <div class="bg-[#f4f7ff] flex items-center justify-center rounded-lg">
+            <div class="bg-white rounded-full p-3">
+              <img src="assets/calender.png" alt="">
+            </div>
+            <div class="pl-3">
+              <h1>Wed, <br> <span class="font-bold">Jul 28 2025</span></h1>
+            </div>
+           </div>
+         </div>
+         <!-- bottom div-->
+          <div>
+
+          </div>
+      </div>
+      <!-- right div -->
+       <div>
+
+       </div>
+    </section>
 </body>
 </html>
