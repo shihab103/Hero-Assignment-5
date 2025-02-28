@@ -27,18 +27,24 @@
         <div class="navbar bg-base-100 rounded-lg">
             <div class="flex-1 flex items-center">
               <img src="assets/logo.png" alt="">
-              <a class="btn btn-ghost text-xl">Dev<span class="font-bold">Board</span></a>
+              <div>
+                <a class="text-xl pl-3"> <span>Dev</span><span class="font-bold">Board</span></a>
+              </div>
             </div>
 
-            <div class="flex-none">
-              <img src="assets/theme-btn.png" alt="">
+            <div class="flex justify-center items-center">
+              <div class="flex items-center justify-center bg-[#f4f7ff] rounded-full px-4 py-2">
+                <img src="assets/checkbox.png" alt="">
+                <h1 id="board-id" class="pl-2">24</h1>
+              </div>
+              <img class="pl-4" src="assets/theme-btn.png" alt="">
             </div>
           </div>
     </section>
 
     <!-- body section -->
     
-    <section class="px-20 mt-5 grid grid-cols-8 gap-4">
+    <section class="px-20 mt-5 grid grid-cols-8 gap-4 pb-10">
       <!-- left div -->
       <div class="bg-white col-span-6 rounded-lg">
         <div class="p-3">
@@ -51,7 +57,7 @@
               </div>
                 <div class="pl-3">
                   <h2 class="text-gray-600 font-medium">Task Assigned</h2>
-                  <h1 class="font-bold text-2xl">05</h1>
+                  <h1 id="task-id" class="font-bold text-2xl">05</h1>
                 </div>
             </div>
             <!-- second -->
@@ -87,7 +93,7 @@
                     <h1 class="text-gray-400">Deadline</h1>
                     <h1 class="font-medium">21 March 2025</h1>
                   </div>
-                  <button class="btn btn-primary">Completed</button>
+                  <button id="ShopEase-btn" class="btn bg-[#3752fd] text-white border-none">Completed</button>
                 </div>
               </div>
 
@@ -103,7 +109,7 @@
                     <h1 class="text-gray-400">Deadline</h1>
                     <h1 class="font-medium">21 March 2025</h1>
                   </div>
-                  <button class="btn btn-primary">Completed</button>
+                  <button id="CloudSync-btn" class="btn bg-[#3752fd] text-white border-none">Completed</button>
                 </div>
               </div>
 
@@ -119,7 +125,7 @@
                     <h1 class="text-gray-400">Deadline</h1>
                     <h1 class="font-medium">21 March 2025</h1>
                   </div>
-                  <button class="btn btn-primary">Completed</button>
+                  <button class="btn bg-[#3752fd] text-white border-none">Completed</button>
                 </div>
               </div>
 
@@ -135,7 +141,7 @@
                     <h1 class="text-gray-400">Deadline</h1>
                     <h1 class="font-medium">21 March 2025</h1>
                   </div>
-                  <button class="btn btn-primary">Completed</button>
+                  <button class="btn bg-[#3752fd] text-white border-none">Completed</button>
                 </div>
               </div>
 
@@ -151,7 +157,7 @@
                     <h1 class="text-gray-400">Deadline</h1>
                     <h1 class="font-medium">21 March 2025</h1>
                   </div>
-                  <button class="btn btn-primary">Completed</button>
+                  <button class="btn bg-[#3752fd] text-white border-none">Completed</button>
                 </div>
               </div>
 
@@ -167,7 +173,7 @@
                     <h1 class="text-gray-400">Deadline</h1>
                     <h1 class="font-medium">21 March 2025</h1>
                   </div>
-                  <button class="btn btn-primary">Completed</button>
+                  <button class="btn bg-[#3752fd] text-white border-none">Completed</button>
                 </div>
               </div>
 
@@ -182,10 +188,14 @@
             <h1 class="pl-3 font-semibold">Activity Log</h1>
           </div>
           <div>
-            <button class="btn btn-primary mt-5">Clear History</button>
+            <button class="btn bg-[#3752fd] text-white border-none mt-5">Clear History</button>
           </div>
         </div>
        </div>
     </section>
+
+    <!-- link js -->
+     <script src="script/script.js"></script>
+     <script src="script/utilities.js"></script>
 </body>
 </html>
