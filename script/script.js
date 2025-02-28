@@ -76,3 +76,33 @@ function genColorFn() {
 document.getElementById('random-color').addEventListener('click',function(){
     document.body.style.backgroundColor = genColorFn();
 });
+
+// date and year
+
+let dates = new Date();
+let day = dates.getDay();
+let month = dates.getMonth();
+let date = dates.getDate();
+let year = dates.getFullYear();
+
+
+
+const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+let daysStr;
+for(let i = 0;i<7;i++){
+    daysStr = days[day-1]
+}
+
+let months = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+];
+let monthStr;
+for(let i = 0;i<12;i++){
+    monthStr = months[month-1]
+}
+
+document.getElementById('day').innerText = daysStr;
+document.getElementById('date').innerText = date;
+document.getElementById('month').innerText = monthStr;
+document.getElementById('year').innerText = year;
