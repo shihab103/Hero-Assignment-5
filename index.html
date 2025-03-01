@@ -1,207 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment 5</title>
     <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <!-- link daisy UI and tailwind -->
     <link
-    href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css"
-    rel="stylesheet"
-    type="text/css"
-  />
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <style>
-    body{
-      font-family: "Poppins", sans-serif;
-    }
-  </style>
-</head>
-<body class="bg-[#f4f7ff]">
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-[#f4f7ff]">
     <!-- navigation section -->
     <section class="lg:px-20 px-5 pt-8">
-        <div class="navbar bg-base-100 rounded-lg">
-            <div class="flex-1 flex items-center">
-              <img src="assets/logo.png" alt="">
-              <div>
-                <a class="text-xl pl-3"> <span>Dev</span><span class="font-bold">Board</span></a>
-              </div>
-            </div>
-
-            <div class="flex justify-center items-center">
-              <div class="flex items-center justify-center bg-[#f4f7ff] rounded-full px-4 py-2">
-                <img src="assets/checkbox.png" alt="">
-                <h1 id="board-id" class="pl-2">23</h1>
-              </div>
-              <img id="random-color" class="pl-4 cursor-pointer" src="assets/theme-btn.png" alt="">
-            </div>
+      <div class="navbar bg-base-100 rounded-lg">
+        <div class="flex-1 flex items-center">
+          <img src="assets/logo.png" alt="" />
+          <div>
+            <a class="text-xl pl-3">
+              <span>Dev</span><span class="font-bold">Board</span></a
+            >
           </div>
+        </div>
+
+        <div class="flex justify-center items-center">
+          <div
+            class="flex items-center justify-center bg-[#f4f7ff] rounded-full px-4 py-2"
+          >
+            <img src="assets/checkbox.png" alt="" />
+            <h1 id="board-id" class="pl-2">23</h1>
+          </div>
+          <img
+            id="random-color"
+            class="pl-4 cursor-pointer"
+            src="assets/theme-btn.png"
+            alt=""
+          />
+        </div>
+      </div>
     </section>
 
     <!-- body section -->
-    
+
     <section class="lg:px-20 px-5 mt-5 lg:grid grid-cols-8 gap-4 pb-10">
       <!-- left div -->
       <div class="bg-white lg:col-span-6 rounded-lg">
         <div class="p-3">
           <!-- top div -->
-           <div class="grid lg:grid-cols-10 gap-4">
+          <div class="grid lg:grid-cols-10 gap-4">
             <!-- first div -->
-            <div class="bg-[#f4f7ff] flex items-center justify-center rounded-lg min-h-28 lg:col-span-3">
+            <div
+              class="bg-[#f4f7ff] flex items-center justify-center rounded-lg min-h-28 lg:col-span-3"
+            >
               <div class="bg-white rounded-full p-3">
-                <img src="assets/checkbox.png" alt="">
+                <img src="assets/checkbox.png" alt="" />
               </div>
-                <div class="pl-3">
-                  <h2 class="text-gray-600 font-medium">Task Assigned</h2>
-                  <h1 id="task-id" class="font-bold text-2xl">6</h1>
-                </div>
+              <div class="pl-3">
+                <h2 class="text-gray-600 font-medium">Task Assigned</h2>
+                <h1 id="task-id" class="font-bold text-2xl">6</h1>
+              </div>
             </div>
             <!-- second -->
-            <div id="Discover-box" class=" flex items-center cursor-pointer justify-center rounded-lg min-h-28 bg-linear-to-r from-cyan-500 to-blue-500 lg:col-span-4">
+            <div
+              id="Discover-box"
+              class="flex items-center cursor-pointer justify-center rounded-lg min-h-28 bg-linear-to-r from-cyan-500 to-blue-500 lg:col-span-4"
+            >
               <div>
-                <img src="assets/board.png" alt="">
+                <img src="assets/board.png" alt="" />
               </div>
               <div>
-                <h1 class="text-white">Discover Something <br> New Today!</h1>
+                <h1 class="text-white">
+                  Discover Something <br />
+                  New Today!
+                </h1>
               </div>
             </div>
             <!-- third -->
-             <div class="bg-[#f4f7ff] flex items-center justify-center rounded-lg min-h-28 lg:col-span-3">
+            <div
+              class="bg-[#f4f7ff] flex items-center justify-center rounded-lg min-h-28 lg:col-span-3"
+            >
               <div class="bg-white rounded-full p-3">
-                <img src="assets/calender.png" alt="">
+                <img src="assets/calender.png" alt="" />
               </div>
               <div class="pl-3">
-                <h1><span id="day" class="font-semibold"></span> , <br> <span class="font-bold"><span id="month"></span> <span id="date"></span> <span id="year"></spani></span></h1>
+                <h1>
+                  <span id="day" class="font-semibold"></span> , <br />
+                  <span id="month"></span> <span id="date"></span>
+                  <span id="year"></span>
+                </h1>
               </div>
-             </div>
-           </div>
-           <!-- bottom div-->
-            <div class="mt-8 grid lg:grid-cols-3 md:grid-cols-2 gap-4">
-              <!-- first box -->
-              <div class="bg-[#f4f7ff] p-3 rounded-lg min-h-[330px]">
-                <div class="mt-5">
-                <h3 class="bg-white text-gray-500 inline p-1 rounded-md">ShopEase</h3>
-                </div>
-                <h1 id="box-1" class="font-semibold my-5">Fix Mobile Button Issue</h1>
-                <p class="text-gray-400 rounded bg-white p-2 mb-5">A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                <div class="flex justify-between items-center">
-                  <div>
-                    <h1 class="text-gray-400">Deadline</h1>
-                    <h1 class="font-medium">21 March 2025</h1>
-                  </div>
-                  <button id="ShopEase-btn" class="btn bg-[#3752fd] text-white border-none">Completed</button>
-                </div>
-              </div>
-
-
-              <div class="bg-[#f4f7ff] p-3 rounded-lg min-h-[330px]">
-                <div class="mt-5">
-                <h3 class="bg-white text-gray-500 inline p-1 rounded-md">CloudSync</h3>
-                </div>
-                <h1 id="box-2" class="font-semibold my-5">Add Dark Mode</h1>
-                <p class="text-gray-400 rounded bg-white p-2 mb-5">A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                <div class="flex justify-between items-center">
-                  <div>
-                    <h1 class="text-gray-400">Deadline</h1>
-                    <h1 class="font-medium">21 March 2025</h1>
-                  </div>
-                  <button id="CloudSync-btn" class="btn bg-[#3752fd] text-white border-none">Completed</button>
-                </div>
-              </div>
-
-
-              <div class="bg-[#f4f7ff] p-3 rounded-lg min-h-[330px]">
-                <div class="mt-5">
-                <h3 class="bg-white text-gray-500 inline p-1 rounded-md">SwiftPay</h3>
-                </div>
-                <h1 id="box-3" class="font-semibold my-5">Optimize  Home page</h1>
-                <p class="text-gray-400 rounded bg-white p-2 mb-5">A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                <div class="flex justify-between items-center">
-                  <div>
-                    <h1 class="text-gray-400">Deadline</h1>
-                    <h1 class="font-medium">21 March 2025</h1>
-                  </div>
-                  <button id="SwiftPay-btn" class="btn bg-[#3752fd] text-white border-none">Completed</button>
-                </div>
-              </div>
-
-
-              <div class="bg-[#f4f7ff] p-3 rounded-lg min-h-[330px]">
-                <div class="mt-5">
-                <h3 class="bg-white text-gray-500 inline p-1 rounded-md">Meta</h3>
-                </div>
-                <h1 id="box-4" class="font-semibold my-5">Add new emoji 🤲</h1>
-                <p class="text-gray-400 rounded bg-white p-2 mb-5">A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                <div class="flex justify-between items-center">
-                  <div>
-                    <h1 class="text-gray-400">Deadline</h1>
-                    <h1 class="font-medium">21 March 2025</h1>
-                  </div>
-                  <button id="Meta-btn" class="btn bg-[#3752fd] text-white border-none">Completed</button>
-                </div>
-              </div>
-
-
-              <div class="bg-[#f4f7ff] p-3 rounded-lg min-h-[330px]">
-                <div class="mt-5">
-                <h3 class="bg-white text-gray-500 inline p-1 rounded-md">Google LLC</h3>
-                </div>
-                <h1 id="box-5" class="font-semibold my-5">Integrate OpenAI API </h1>
-                <p class="text-gray-400 rounded bg-white p-2 mb-5">A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                <div class="flex justify-between items-center">
-                  <div>
-                    <h1 class="text-gray-400">Deadline</h1>
-                    <h1 class="font-medium">21 March 2025</h1>
-                  </div>
-                  <button id="Google-btn" class="btn bg-[#3752fd] text-white border-none">Completed</button>
-                </div>
-              </div>
-
-
-              <div class="bg-[#f4f7ff] p-3 rounded-lg min-h-[330px]">
-                <div class="mt-5">
-                <h3 class="bg-white text-gray-500 inline p-1 rounded-md">Glassdoar</h3>
-                </div>
-                <h1 id="box-6"class="font-semibold my-5">Improve Job searching </h1>
-                <p class="text-gray-400 rounded bg-white p-2 mb-5">A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                <div class="flex justify-between items-center">
-                  <div>
-                    <h1 class="text-gray-400">Deadline</h1>
-                    <h1 class="font-medium">21 March 2025</h1>
-                  </div>
-                  <button id="Glassdoar-btn" class="btn bg-[#3752fd] text-white border-none">Completed</button>
-                </div>
-              </div>
-
             </div>
+          </div>
+          <!-- bottom div-->
+          <div class="mt-8 grid lg:grid-cols-3 md:grid-cols-2 gap-4">
+            <!-- first box -->
+            <div class="bg-[#f4f7ff] p-3 rounded-lg min-h-[330px]">
+              <div class="mt-5">
+                <h3 class="bg-white text-gray-500 inline p-1 rounded-md">
+                  ShopEase
+                </h3>
+              </div>
+              <h1 id="box-1" class="font-semibold my-5">
+                Fix Mobile Button Issue
+              </h1>
+              <p class="text-gray-400 rounded bg-white p-2 mb-5">
+                A card component has a figure, a body part, and inside body
+                there are title and actions parts
+              </p>
+              <div class="flex justify-between items-center">
+                <div>
+                  <h1 class="text-gray-400">Deadline</h1>
+                  <h1 class="font-medium">21 March 2025</h1>
+                </div>
+                <button
+                  id="ShopEase-btn"
+                  class="btn bg-[#3752fd] text-white border-none"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+
+            <div class="bg-[#f4f7ff] p-3 rounded-lg min-h-[330px]">
+              <div class="mt-5">
+                <h3 class="bg-white text-gray-500 inline p-1 rounded-md">
+                  CloudSync
+                </h3>
+              </div>
+              <h1 id="box-2" class="font-semibold my-5">Add Dark Mode</h1>
+              <p class="text-gray-400 rounded bg-white p-2 mb-5">
+                A card component has a figure, a body part, and inside body
+                there are title and actions parts
+              </p>
+              <div class="flex justify-between items-center">
+                <div>
+                  <h1 class="text-gray-400">Deadline</h1>
+                  <h1 class="font-medium">21 March 2025</h1>
+                </div>
+                <button
+                  id="CloudSync-btn"
+                  class="btn bg-[#3752fd] text-white border-none"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+
+            <div class="bg-[#f4f7ff] p-3 rounded-lg min-h-[330px]">
+              <div class="mt-5">
+                <h3 class="bg-white text-gray-500 inline p-1 rounded-md">
+                  SwiftPay
+                </h3>
+              </div>
+              <h1 id="box-3" class="font-semibold my-5">Optimize Home page</h1>
+              <p class="text-gray-400 rounded bg-white p-2 mb-5">
+                A card component has a figure, a body part, and inside body
+                there are title and actions parts
+              </p>
+              <div class="flex justify-between items-center">
+                <div>
+                  <h1 class="text-gray-400">Deadline</h1>
+                  <h1 class="font-medium">21 March 2025</h1>
+                </div>
+                <button
+                  id="SwiftPay-btn"
+                  class="btn bg-[#3752fd] text-white border-none"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+
+            <div class="bg-[#f4f7ff] p-3 rounded-lg min-h-[330px]">
+              <div class="mt-5">
+                <h3 class="bg-white text-gray-500 inline p-1 rounded-md">
+                  Meta
+                </h3>
+              </div>
+              <h1 id="box-4" class="font-semibold my-5">Add new emoji 🤲</h1>
+              <p class="text-gray-400 rounded bg-white p-2 mb-5">
+                A card component has a figure, a body part, and inside body
+                there are title and actions parts
+              </p>
+              <div class="flex justify-between items-center">
+                <div>
+                  <h1 class="text-gray-400">Deadline</h1>
+                  <h1 class="font-medium">21 March 2025</h1>
+                </div>
+                <button
+                  id="Meta-btn"
+                  class="btn bg-[#3752fd] text-white border-none"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+
+            <div class="bg-[#f4f7ff] p-3 rounded-lg min-h-[330px]">
+              <div class="mt-5">
+                <h3 class="bg-white text-gray-500 inline p-1 rounded-md">
+                  Google LLC
+                </h3>
+              </div>
+              <h1 id="box-5" class="font-semibold my-5">
+                Integrate OpenAI API
+              </h1>
+              <p class="text-gray-400 rounded bg-white p-2 mb-5">
+                A card component has a figure, a body part, and inside body
+                there are title and actions parts
+              </p>
+              <div class="flex justify-between items-center">
+                <div>
+                  <h1 class="text-gray-400">Deadline</h1>
+                  <h1 class="font-medium">21 March 2025</h1>
+                </div>
+                <button
+                  id="Google-btn"
+                  class="btn bg-[#3752fd] text-white border-none"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+
+            <div class="bg-[#f4f7ff] p-3 rounded-lg min-h-[330px]">
+              <div class="mt-5">
+                <h3 class="bg-white text-gray-500 inline p-1 rounded-md">
+                  Glassdoar
+                </h3>
+              </div>
+              <h1 id="box-6" class="font-semibold my-5">
+                Improve Job searching
+              </h1>
+              <p class="text-gray-400 rounded bg-white p-2 mb-5">
+                A card component has a figure, a body part, and inside body
+                there are title and actions parts
+              </p>
+              <div class="flex justify-between items-center">
+                <div>
+                  <h1 class="text-gray-400">Deadline</h1>
+                  <h1 class="font-medium">21 March 2025</h1>
+                </div>
+                <button
+                  id="Glassdoar-btn"
+                  class="btn bg-[#3752fd] text-white border-none"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       <!-- right div -->
 
-       <div class="lg:col-span-2 bg-white rounded-lg pt-5">
-        <div class="flex flex-col justify-center items-center border-b border-dashed border-gray-400 pb-5">
+      <div class="lg:col-span-2 bg-white rounded-lg pt-5">
+        <div
+          class="flex flex-col justify-center items-center border-b border-dashed border-gray-400 pb-5"
+        >
           <div class="flex items-center justify-center">
-            <img class="border border-dashed border-gray-400" src="assets/activity.png" alt="">
+            <img
+              class="border border-dashed border-gray-400"
+              src="assets/activity.png"
+              alt=""
+            />
             <h1 class="pl-3 font-semibold">Activity Log</h1>
           </div>
           <div>
-            <button id="clear-btn" class="btn bg-[#3752fd] text-white border-none mt-5">Clear History</button>
+            <button
+              id="clear-btn"
+              class="btn bg-[#3752fd] text-white border-none mt-5"
+            >
+              Clear History
+            </button>
           </div>
         </div>
         <div id="History-site" class="p-3">
           <!-- history -->
         </div>
-       </div>
+      </div>
     </section>
 
     <!-- link js -->
-     <script src="script/script.js"></script>
-     <script src="script/utilities.js"></script>
-     <script src="script/question.js"></script>
-</body>
+    <script src="script/script.js"></script>
+    <script src="script/utilities.js"></script>
+    <script src="script/question.js"></script>
+  </body>
 </html>
