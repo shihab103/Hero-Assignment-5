@@ -8,6 +8,8 @@ document.getElementById('ShopEase-btn').addEventListener('click',function(e){
     setInnerTextByIDandValue('task-id',sub);
     setInnerTextByIDandValue('board-id',sum);
     document.getElementById("ShopEase-btn").disabled = true;
+    // title add
+    const title = document.getElementById('box-1').innerText;
     // print history
     const container = document.getElementById('History-site');
     const div = document.createElement("div");
@@ -15,7 +17,7 @@ document.getElementById('ShopEase-btn').addEventListener('click',function(e){
     div.classList.add('mb-2');
     div.classList.add('bg-[#f4f7ff]');
     div.innerHTML =  `
-    <p>You have Complete The Task Add Dark Mode at ${showTime()} PM</p>
+    <p>You have Complete The Task ${title} at ${showTime()} PM</p>
     `;
     container.appendChild(div);
 });
@@ -29,7 +31,9 @@ document.getElementById('CloudSync-btn').addEventListener('click',function(e){
     const sum = bordValue + 1;
     setInnerTextByIDandValue('task-id',sub);
     setInnerTextByIDandValue('board-id',sum);
-    document.getElementById("CloudSync-btn").disabled = true;    
+    document.getElementById("CloudSync-btn").disabled = true;   
+    // title add
+    const title = document.getElementById('box-2').innerText; 
     // print history
     const container = document.getElementById('History-site');
     const div = document.createElement("div");
@@ -37,7 +41,7 @@ document.getElementById('CloudSync-btn').addEventListener('click',function(e){
     div.classList.add('mb-2');
     div.classList.add('bg-[#f4f7ff]');
     div.innerHTML =  `
-    <p>You have Complete The Task Add Dark Mode at ${showTime()} PM</p>
+    <p>You have Complete The Task ${title} at ${showTime()} PM</p>
     `;
     container.appendChild(div);
 });
@@ -52,6 +56,8 @@ document.getElementById('SwiftPay-btn').addEventListener('click',function(e){
     setInnerTextByIDandValue('task-id',sub);
     setInnerTextByIDandValue('board-id',sum);
     document.getElementById("SwiftPay-btn").disabled = true;   
+    // title add
+    const title = document.getElementById('box-3').innerText;
     // print history
     const container = document.getElementById('History-site');
     const div = document.createElement("div");
@@ -59,7 +65,7 @@ document.getElementById('SwiftPay-btn').addEventListener('click',function(e){
     div.classList.add('mb-2');
     div.classList.add('bg-[#f4f7ff]');
     div.innerHTML =  `
-    <p>You have Complete The Task Add Dark Mode at ${showTime()} PM</p>
+    <p>You have Complete The Task ${title} at ${showTime()} PM</p>
     `;
     container.appendChild(div); 
 });
@@ -73,6 +79,8 @@ document.getElementById('Meta-btn').addEventListener('click',function(e){
     setInnerTextByIDandValue('task-id',sub);
     setInnerTextByIDandValue('board-id',sum);
     document.getElementById("Meta-btn").disabled = true;    
+    // title add
+    const title = document.getElementById('box-4').innerText;
     // print history
     const container = document.getElementById('History-site');
     const div = document.createElement("div");
@@ -80,7 +88,7 @@ document.getElementById('Meta-btn').addEventListener('click',function(e){
     div.classList.add('mb-2');
     div.classList.add('bg-[#f4f7ff]');
     div.innerHTML =  `
-    <p>You have Complete The Task Add Dark Mode at ${showTime()} PM</p>
+    <p>You have Complete The Task ${title} at ${showTime()} PM</p>
     `;
     container.appendChild(div);
 });
@@ -94,6 +102,8 @@ document.getElementById('Google-btn').addEventListener('click',function(e){
     setInnerTextByIDandValue('task-id',sub);
     setInnerTextByIDandValue('board-id',sum);
     document.getElementById("Google-btn").disabled = true;    
+    // title add
+    const title = document.getElementById('box-5').innerText;
     // print history
     const container = document.getElementById('History-site');
     const div = document.createElement("div");
@@ -101,7 +111,7 @@ document.getElementById('Google-btn').addEventListener('click',function(e){
     div.classList.add('mb-2');
     div.classList.add('bg-[#f4f7ff]');
     div.innerHTML =  `
-    <p>You have Complete The Task Add Dark Mode at ${showTime()} PM</p>
+    <p>You have Complete The Task ${title} at ${showTime()} PM</p>
     `;
     container.appendChild(div);
 });
@@ -115,6 +125,8 @@ document.getElementById('Glassdoar-btn').addEventListener('click',function(e){
     setInnerTextByIDandValue('task-id',sub);
     setInnerTextByIDandValue('board-id',sum);
     document.getElementById("Glassdoar-btn").disabled = true;    
+    // title add
+    const title = document.getElementById('box-6').innerText;
     // print history
     const container = document.getElementById('History-site');
     const div = document.createElement("div");
@@ -122,7 +134,7 @@ document.getElementById('Glassdoar-btn').addEventListener('click',function(e){
     div.classList.add('mb-2');
     div.classList.add('bg-[#f4f7ff]');
     div.innerHTML =  `
-    <p>You have Complete The Task Add Dark Mode at ${showTime()} PM</p>
+    <p>You have Complete The Task ${title} at ${showTime()} PM</p>
     `;
     container.appendChild(div);
 });
