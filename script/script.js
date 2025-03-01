@@ -69,6 +69,7 @@ document.getElementById('SwiftPay-btn').addEventListener('click',function(e){
     `;
     container.appendChild(div); 
 });
+
 document.getElementById('Meta-btn').addEventListener('click',function(e){
     e.preventDefault();
     alert('Board updated Successfully')
@@ -92,6 +93,7 @@ document.getElementById('Meta-btn').addEventListener('click',function(e){
     `;
     container.appendChild(div);
 });
+
 document.getElementById('Google-btn').addEventListener('click',function(e){
     e.preventDefault();
     alert('Board updated Successfully')
@@ -115,6 +117,7 @@ document.getElementById('Google-btn').addEventListener('click',function(e){
     `;
     container.appendChild(div);
 });
+
 document.getElementById('Glassdoar-btn').addEventListener('click',function(e){
     e.preventDefault();
     alert('Board updated Successfully')
@@ -138,6 +141,7 @@ document.getElementById('Glassdoar-btn').addEventListener('click',function(e){
     `;
     container.appendChild(div);
 });
+
 
 // history clear korbo ekn 🙂
 
