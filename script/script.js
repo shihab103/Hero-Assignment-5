@@ -7,7 +7,17 @@ document.getElementById('ShopEase-btn').addEventListener('click',function(e){
     const sum = bordValue + 1;
     setInnerTextByIDandValue('task-id',sub);
     setInnerTextByIDandValue('board-id',sum);
-    document.getElementById("ShopEase-btn").disabled = true;    
+    document.getElementById("ShopEase-btn").disabled = true;
+    // print history
+    const container = document.getElementById('History-site');
+    const div = document.createElement("div");
+    div.classList.add('p-4');
+    div.classList.add('mb-2');
+    div.classList.add('bg-[#f4f7ff]');
+    div.innerHTML =  `
+    <p>You have Complete The Task Add Dark Mode at ${showTime()} PM</p>
+    `;
+    container.appendChild(div);
 });
 
 document.getElementById('CloudSync-btn').addEventListener('click',function(e){
@@ -20,6 +30,16 @@ document.getElementById('CloudSync-btn').addEventListener('click',function(e){
     setInnerTextByIDandValue('task-id',sub);
     setInnerTextByIDandValue('board-id',sum);
     document.getElementById("CloudSync-btn").disabled = true;    
+    // print history
+    const container = document.getElementById('History-site');
+    const div = document.createElement("div");
+    div.classList.add('p-4');
+    div.classList.add('mb-2');
+    div.classList.add('bg-[#f4f7ff]');
+    div.innerHTML =  `
+    <p>You have Complete The Task Add Dark Mode at ${showTime()} PM</p>
+    `;
+    container.appendChild(div);
 });
 
 document.getElementById('SwiftPay-btn').addEventListener('click',function(e){
@@ -31,7 +51,17 @@ document.getElementById('SwiftPay-btn').addEventListener('click',function(e){
     const sum = bordValue + 1;
     setInnerTextByIDandValue('task-id',sub);
     setInnerTextByIDandValue('board-id',sum);
-    document.getElementById("SwiftPay-btn").disabled = true;    
+    document.getElementById("SwiftPay-btn").disabled = true;   
+    // print history
+    const container = document.getElementById('History-site');
+    const div = document.createElement("div");
+    div.classList.add('p-4');
+    div.classList.add('mb-2');
+    div.classList.add('bg-[#f4f7ff]');
+    div.innerHTML =  `
+    <p>You have Complete The Task Add Dark Mode at ${showTime()} PM</p>
+    `;
+    container.appendChild(div); 
 });
 document.getElementById('Meta-btn').addEventListener('click',function(e){
     e.preventDefault();
@@ -43,6 +73,16 @@ document.getElementById('Meta-btn').addEventListener('click',function(e){
     setInnerTextByIDandValue('task-id',sub);
     setInnerTextByIDandValue('board-id',sum);
     document.getElementById("Meta-btn").disabled = true;    
+    // print history
+    const container = document.getElementById('History-site');
+    const div = document.createElement("div");
+    div.classList.add('p-4');
+    div.classList.add('mb-2');
+    div.classList.add('bg-[#f4f7ff]');
+    div.innerHTML =  `
+    <p>You have Complete The Task Add Dark Mode at ${showTime()} PM</p>
+    `;
+    container.appendChild(div);
 });
 document.getElementById('Google-btn').addEventListener('click',function(e){
     e.preventDefault();
@@ -54,6 +94,16 @@ document.getElementById('Google-btn').addEventListener('click',function(e){
     setInnerTextByIDandValue('task-id',sub);
     setInnerTextByIDandValue('board-id',sum);
     document.getElementById("Google-btn").disabled = true;    
+    // print history
+    const container = document.getElementById('History-site');
+    const div = document.createElement("div");
+    div.classList.add('p-4');
+    div.classList.add('mb-2');
+    div.classList.add('bg-[#f4f7ff]');
+    div.innerHTML =  `
+    <p>You have Complete The Task Add Dark Mode at ${showTime()} PM</p>
+    `;
+    container.appendChild(div);
 });
 document.getElementById('Glassdoar-btn').addEventListener('click',function(e){
     e.preventDefault();
@@ -65,7 +115,24 @@ document.getElementById('Glassdoar-btn').addEventListener('click',function(e){
     setInnerTextByIDandValue('task-id',sub);
     setInnerTextByIDandValue('board-id',sum);
     document.getElementById("Glassdoar-btn").disabled = true;    
+    // print history
+    const container = document.getElementById('History-site');
+    const div = document.createElement("div");
+    div.classList.add('p-4');
+    div.classList.add('mb-2');
+    div.classList.add('bg-[#f4f7ff]');
+    div.innerHTML =  `
+    <p>You have Complete The Task Add Dark Mode at ${showTime()} PM</p>
+    `;
+    container.appendChild(div);
 });
+
+// history clear korbo ekn 🙂
+
+document.getElementById('clear-btn').addEventListener('click',function(e){
+    e.preventDefault();
+    document.getElementById("History-site").innerText = '';
+})
 
 // random color
 
@@ -90,7 +157,7 @@ let year = dates.getFullYear();
 const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 let daysStr;
 for(let i = 0;i<7;i++){
-    daysStr = days[day-1]
+    daysStr = days[day-1];
 }
 
 let months = [
@@ -99,7 +166,7 @@ let months = [
 ];
 let monthStr;
 for(let i = 0;i<12;i++){
-    monthStr = months[month-1]
+    monthStr = months[month-1];
 }
 
 document.getElementById('day').innerText = daysStr;
